@@ -1,4 +1,5 @@
 import 'package:apple_coding3/one/container.dart';
+import 'package:apple_coding3/two/homework.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ContainerEx(),
+      home: BottomDesign(),
     );
   }
 }
