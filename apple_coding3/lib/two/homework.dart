@@ -9,11 +9,10 @@ class BottomDesign extends StatelessWidget {
       appBar: AppBar(
         title: Text('앱제목'),
       ),
-      body: Container(),
+      body: Text('안녕'),
       bottomNavigationBar: BottomAppBar(
-        child: Container(
+        child: SizedBox(
           height: 50,
-          color: Colors.white,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: const [
