@@ -29,8 +29,9 @@ class _CountHomeworkState extends State<CountHomework> {
                 ),
                 ElevatedButton(
                     onPressed: () {
-                      setState(() {
                         a[index]++;
+                      setState(() {
+
                       });
                     },
                     child: Text('좋아요')),

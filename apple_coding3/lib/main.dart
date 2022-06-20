@@ -1,5 +1,6 @@
 
 import 'package:apple_coding3/twoweeks/add_people_homework.dart';
+import 'package:apple_coding3/twoweeks/count_homework.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
       debugShowCheckedModeBanner: false,
-      home: AddPeopleHomework(),
+      home: CountHomework(),
     );
   }
 }
