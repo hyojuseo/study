@@ -10,11 +10,7 @@ dependencies:
     permission_handler: 'version'
 ```
 
-<br>
-
 compileSdkVersion yourCompileSdkVersion
-
-<br>
 
 - android/app/src/main/ANdroidManifest.xml
 ```
@@ -34,6 +30,24 @@ getPermission() async{
     } else if(status.isDenied){
         print('deny');
         Permission.contacts.request();
+        //더이상 팝업창이 뜨지않을때 직접 권한설정하라고 하기.
+        openAppSettings();
     }
 }
+```
+
+## 연락처 가져오기
+- contacts_service: ^0.6.3 library add
+
+```
+var contacts = await ContactsService.getContacts();
+name = contacts;
+print(name[0].displayName);
+```
+
+## 연락처 추가하기
+```
+var newPerson = Contact();
+newPerson.givenName = 'name';
+ContactsService.addContact(newPerson);
 ```
